@@ -1,17 +1,29 @@
-import React, { useState } from "react";
-import { SafeAreaView, StyleSheet, Text, TouchableHighlight, View } from "react-native";
-
-const TouchableHighlightExample = () => {
-  const [count, setCount] = useState(0);
-  const onPress = () => setCount(count + 1);
-
-  return (
-    <SafeAreaView>
-      
+import React from "react";
+import { SafeAreaView,View,Text, FlatList,StyleSheet } from "react-native";
+import Header from "./components/Header/header";
+const App = () =>
+{
+  return(
+    <SafeAreaView style={styles.container}>
+       <Header />
+      <View style={styles.inner_container}>
+        <View>
+          <FlatList data = {[1,2,3,4,5,6,7,8,9,10,11]} 
+          renderItem= {data => <Text>{data.item}</Text>} 
+          />
+        </View>
+      </View>
     </SafeAreaView>
   )
 }
-
-
-
-export default TouchableHighlightExample;
+export default App
+const styles = StyleSheet.create({
+  container:{
+    flex:1,
+  },
+  inner_container:{
+    flex:1,
+   
+  },
+  
+})
