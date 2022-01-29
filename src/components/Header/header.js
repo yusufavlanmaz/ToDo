@@ -1,13 +1,13 @@
 import React from "react";
-import { SafeAreaView,View,Text } from "react-native";
+import {View,Text} from 'react-native';
 import styles from './header.styles';
-const Header = (props) =>{
-
+const Header= ({todo})=> {
     return(
         <View style={styles.container}>
-            <Text style={styles.text}>Yapılacaklar</Text>
-
+            <Text style={styles.text_header}>Yapılcaklar</Text>
+            <Text style={styles.text_header}>{todo.length}</Text>
         </View>
     )
+
 }
 export default Header;
