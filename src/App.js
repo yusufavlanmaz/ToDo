@@ -1,8 +1,9 @@
 import React,{useState} from "react";
-import { FlatList, SafeAreaView,Text,View,StyleSheet,TouchableHighlight } from "react-native";
+import { FlatList, SafeAreaView,Text,View,StyleSheet,TouchableHighlight, AsyncStorage } from "react-native";
 import Header from './components/Header'
 import ItemBox from "./components/ıtemBox/ItemBox";
 import TodoItems from "./components/todoItems/todoItems";
+
 const App = ()=> {
   const [todo, setTodo] = useState([]);
   const [text, setText] = useState('');
@@ -18,6 +19,7 @@ const App = ()=> {
       </TouchableHighlight>
     );
   };
+ 
   return(
     <SafeAreaView style={styles.container}>
         <Header todo={todo} />

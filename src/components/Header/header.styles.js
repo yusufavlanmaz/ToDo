@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     text_header:{
             
-            color:'white',
+            color:'orange',
             fontSize:44,
             fontWeight:'900',
         

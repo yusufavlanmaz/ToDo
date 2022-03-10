@@ -20,7 +20,7 @@ const ItemBox =({text,setTodo,setText,todo})=> {
             <TextInput
             style={styles.input}
             placeholder="Yapılacak..."
-            placeholderTextColor='red'
+            placeholderTextColor='#37474F'
             value={text}
             onChangeText={handleChange}
 
@@ -29,7 +29,7 @@ const ItemBox =({text,setTodo,setText,todo})=> {
            style={styles.button}
            onPress={handleClick}
         >
-               <Text style={styles.text}>PRESS</Text>
+               <Text style={styles.text}>Kaydet</Text>
            </TouchableHighlight>
         </View>
         
