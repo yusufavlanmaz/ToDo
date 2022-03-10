@@ -1,2 +1,2 @@
 # ToDo
-![Image](https://www.hizliresim.com/hh3e27g)
+[Link](https://www.hizliresim.com/hh3e27g)
