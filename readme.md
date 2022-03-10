@@ -1,1 +1,0 @@
-![lorem picsum Gorsel] (https://www.hizliresim.com/hh3e27g)
