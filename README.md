@@ -1,2 +1,2 @@
 # ToDo
-![sss](https://www.hizliresim.com/hh3e27g)
+[1]: https://www.hizliresim.com/hh3e27g
